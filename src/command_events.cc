@@ -95,8 +95,8 @@ apply_on_ratio(const torrent::Object& rawArgs) {
     int64_t totalDone   = (*itr)->download()->bytes_done();
     int64_t totalUpload = (*itr)->info()->up_rate()->total();
 
-    if (!(totalUpload >= minUpload && totalUpload * 100 >= totalDone * minRatio) &&
-        !(maxRatio > 0 && totalUpload * 100 > totalDone * maxRatio))
+    if (!(totalUpload >= 0 && totalUpload * 100 >= totalDone * 0) &&
+        !(maxRatio > 0 && totalUpload * 100 > totalDone * 0))
       continue;
 
     downloads.push_back(*itr);

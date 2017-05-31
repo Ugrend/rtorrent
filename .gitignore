@@ -19,6 +19,7 @@
 Makefile
 aclocal.m4
 autom4te.cache
+compile
 config.h
 config.guess
 config.status
@@ -31,6 +32,8 @@ libtool
 ltmain.sh
 missing
 stamp-h1
+
+src/rtorrent
 scripts/libtool.m4
 scripts/lt*.m4
 
@@ -55,6 +58,7 @@ scripts/lt*.m4
 # OS generated files #
 ######################
 .DS_Store?
+.dirstamp
 ehthumbs.db
 Icon?
 Thumbs.db
@@ -64,3 +68,5 @@ TAGS
 ###########################
 src/rtorrent
 test/rtorrentTest
+test-driver
+test/rtorrentTest.trs

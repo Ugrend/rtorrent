@@ -69,8 +69,8 @@ public:
   typedef DownloadList::iterator                    DListItr;
   typedef utils::FileStatusCache                    FileStatusCache;
 
-  typedef sigc::slot1<void, DownloadList::iterator> SlotReady;
-  typedef sigc::slot0<void>                         SlotFailed;
+  // typedef std::function<void (DownloadList::iterator)> slot_ready;
+  // typedef std::function<void ()>                       slot_void;
 
   Manager();
   ~Manager();

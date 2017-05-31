@@ -18,6 +18,7 @@ libsub_root_a_SOURCES = \
 	command_helpers.h \
 	command_groups.cc \
 	command_local.cc \
+	command_logging.cc \
 	command_network.cc \
 	command_peer.cc \
 	command_throttle.cc \
@@ -52,4 +53,4 @@ rtorrent_LDADD = \
 rtorrent_SOURCES = \
 	main.cc
 
-INCLUDES = -I$(srcdir) -I$(top_srcdir)
+AM_CPPFLAGS = -I$(srcdir) -I$(top_srcdir)
